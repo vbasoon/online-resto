@@ -1,0 +1,51 @@
+@media (max-width: 991px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    &__menu {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background: #fff;
+      border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
+      border-bottom: 0.1rem solid rgba(0, 0, 0, 0.2);
+      width: 100%;
+      padding: 1rem;
+      clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+      &-list {
+        flex-direction: column;
+
+        width: 100%;
+      }
+      &-link {
+        display: block;
+        padding: 1.5rem;
+        background: #eee;
+        font-size: 2rem;
+        &--active {
+          background-color: $green;
+        }
+      }
+
+      &.active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+      }
+    }
+    &__icons {
+      #menu-bars {
+        display: inline-block;
+      }
+    }
+  }
+  #search {
+    &-box {
+      width: 50%;
+      margin: 0 1rem;
+    }
+  }
+}
