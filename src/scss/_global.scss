@@ -1,3 +1,5 @@
+//@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400&display=swap");
+
 :root {
   --green: #27ae60;
   --black: #192a56;
@@ -25,4 +27,25 @@ body {
   outline: none;
   border: none;
   text-transform: capitalize;
+}
+
+section {
+  padding: 2rem 9%;
+  //border: 5px solid red;
+  margin: 0 auto;
+}
+
+.btn {
+  display: inline-block;
+  font-size: 1.7rem;
+  color: #fff;
+  background-color: $black;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  padding: 0.8rem 3rem;
+  margin-top: 1rem;
+  &:hover {
+    background-color: green;
+    letter-spacing: 0.1rem;
+  }
 }

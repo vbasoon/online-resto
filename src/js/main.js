@@ -18,3 +18,17 @@ document.querySelector("#search-icon").onclick = () => {
 document.querySelector("#close").onclick = () => {
   document.querySelector("#search").classList.remove("active");
 };
+
+const swiper = new Swiper(".swiper", {
+  spaceBetween: 30,
+  centeredSlides: true,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+  loop: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});

@@ -1,6 +1,46 @@
+@media (max-width: 1129px) {
+  .slider {
+    &__wrapper {
+    }
+    &-item {
+      justify-content: center;
+      &__content {
+        flex: 1 1 none;
+        max-width: 70%;
+        margin-left: 10rem;
+      }
+      &__image {
+        flex: 1 1 none;
+        max-width: 70%;
+        //border: 2px solid green;
+        img {
+          width: 70%;
+        }
+      }
+    }
+  }
+}
+
 @media (max-width: 991px) {
   html {
-    font-size: 50%;
+    font-size: 55%;
+  }
+
+  .slider {
+    &__wrapper {
+    }
+    &-item {
+      &__content {
+      }
+      &__image {
+        flex: 1 1 none;
+        max-width: 70%;
+        //border: 2px solid green;
+        img {
+          width: 70%;
+        }
+      }
+    }
   }
 }
 
@@ -17,6 +57,7 @@
       width: 100%;
       padding: 1rem;
       clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+      z-index: 10;
       &-list {
         flex-direction: column;
 
@@ -39,6 +80,8 @@
     &__icons {
       #menu-bars {
         display: inline-block;
+        border: 2px solid red;
+        z-index: 1000;
       }
     }
   }
@@ -46,6 +89,44 @@
     &-box {
       width: 50%;
       margin: 0 1rem;
+    }
+  }
+
+  .slider {
+    &-item {
+      width: 70%;
+      &__content {
+        margin-left: 5rem;
+        h3 {
+          font-size: 5rem;
+        }
+        p {
+          color: $light-color;
+          font-size: 2rem;
+          padding: 0.5rem 0;
+        }
+        &__btn {
+          margin-top: 1rem;
+        }
+      }
+      &__image {
+        img {
+          max-width: auto;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 540px) {
+  .slider {
+    &-item {
+      &__content {
+        margin-left: 0rem;
+        h3 {
+          font-size: 3rem;
+        }
+      }
     }
   }
 }
