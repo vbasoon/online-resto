@@ -1,0 +1,29 @@
+.home {
+}
+
+.dishes {
+  padding: 3rem 3rem;
+
+  &__sub-heading,
+  &__heading {
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  &__sub-heading {
+    color: $green;
+  }
+
+  &__heading {
+    color: $black;
+    font-size: 3rem;
+    padding-bottom: 2rem;
+    text-transform: uppercase;
+  }
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat (auto-fit, minmax(28rem, 1fr));
+    gap: 1.5rem;
+  }
+}
