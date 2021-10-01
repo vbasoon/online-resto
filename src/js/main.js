@@ -26,7 +26,13 @@ const swiper = new Swiper(".swiper", {
     delay: 2500,
     disableOnInteraction: false,
   },
-  loop: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+
+  slidesPerView: 1,
+  //loop: true,
   pagination: {
     el: ".swiper-pagination",
     clickable: true,

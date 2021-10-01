@@ -1,0 +1,79 @@
+.swiper {
+  width: 100%;
+  height: 92vh;
+  //border: 5px solid red;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.slider {
+  &-item {
+    padding-top: 50px;
+
+    &__content {
+      flex: 1 1 45rem;
+      border: 2px solid green;
+      padding: 100px;
+      text-align: left;
+      margin-left: 150px;
+      span {
+        color: $green;
+        font-size: 2.5rem;
+      }
+      h3 {
+        color: $black;
+        font-size: 7rem;
+        font-family: "Nunito", sans-serif;
+      }
+      p {
+        color: $light-color;
+        font-size: 2rem;
+        padding: 0.5rem 0;
+      }
+      &__btn {
+        margin-top: 1rem;
+      }
+    }
+    &__image {
+      flex: 1 1 45rem;
+      border: 2px solid green;
+      padding: 10px;
+      margin: 0 auto;
+      img {
+        width: 80%;
+      }
+    }
+  }
+}

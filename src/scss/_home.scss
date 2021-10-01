@@ -1,4 +1,96 @@
 .home {
   &__container {
+    &__slide {
+      padding: 0 10px;
+      &-content {
+        margin: 0 auto;
+      }
+      &-images {
+      }
+    }
+  }
+}
+
+.dishes {
+  padding: 3rem 3rem;
+
+  &__sub-heading,
+  &__heading {
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  &__sub-heading {
+    color: $green;
+  }
+
+  &__heading {
+    color: $black;
+    font-size: 3rem;
+    padding-bottom: 2rem;
+    text-transform: uppercase;
+  }
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+    gap: 1.5rem;
+  }
+
+  &__item {
+    padding: 2.5rem;
+    background-color: #fff;
+    border-radius: 0.5rem;
+    border: 0.1rem solid rgba(0, 0, 0, 0.2);
+    box-shadow: $box-shadow;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    .fa-heart,
+    .fa-eye {
+      position: absolute;
+      top: 1.5rem;
+      background-color: #eee;
+      border-radius: 50%;
+      width: 5rem;
+      height: 5rem;
+      line-height: 5rem;
+      font-size: 2rem;
+      color: $black;
+      &:hover {
+        background-color: $green;
+        color: #eee;
+      }
+    }
+
+    .fa-heart {
+      right: 1.5rem;
+    }
+
+    .fa-eye {
+      left: 1.5rem;
+    }
+    img {
+      height: 16rem;
+      margin: 1rem 0;
+    }
+    h3 {
+      color: black;
+      font-size: 2.5rem;
+    }
+  }
+
+  &__rating {
+    padding: 1rem 0;
+    i {
+      font-size: 1.7rem;
+      color: $green;
+    }
+  }
+  span {
+    color: $green;
+    font-weight: bolder;
+    margin-right: 1rem;
+    font-size: 2.5rem;
   }
 }

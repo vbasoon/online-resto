@@ -1,23 +1,10 @@
-@media (max-width: 1129px) {
+@media (max-width: 1440px) {
+  .swiper-slide {
+    //flex-wrap: nowrap;
+    overflow-x: hidden;
+  }
+
   .slider {
-    &__wrapper {
-    }
-    &-item {
-      justify-content: center;
-      &__content {
-        flex: 1 1 none;
-        max-width: 70%;
-        margin-left: 10rem;
-      }
-      &__image {
-        flex: 1 1 none;
-        max-width: 70%;
-        //border: 2px solid green;
-        img {
-          width: 70%;
-        }
-      }
-    }
   }
 }
 
@@ -39,6 +26,17 @@
         img {
           width: 70%;
         }
+      }
+    }
+  }
+
+  .home {
+    &__slide {
+      padding: 0 10px;
+      &-content {
+        margin: 0 auto;
+      }
+      &-images {
       }
     }
   }
