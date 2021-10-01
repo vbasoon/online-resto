@@ -14,6 +14,7 @@
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
+  flex-wrap: wrap;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
@@ -22,7 +23,7 @@
   -ms-flex-align: center;
   -webkit-align-items: center;
   align-items: center;
-  border: 2px solid green;
+  gap: 2rem;
 }
 
 .swiper-slide img {
@@ -40,9 +41,13 @@
 .slider {
   &-item {
     padding-top: 50px;
+
     &__content {
       flex: 1 1 45rem;
-      //border: 2px solid green;
+      border: 2px solid green;
+      padding: 100px;
+      text-align: left;
+      margin-left: 150px;
       span {
         color: $green;
         font-size: 2.5rem;
@@ -63,7 +68,9 @@
     }
     &__image {
       flex: 1 1 45rem;
-      //border: 2px solid green;
+      border: 2px solid green;
+      padding: 10px;
+      margin: 0 auto;
       img {
         width: 80%;
       }

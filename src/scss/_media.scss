@@ -1,6 +1,27 @@
+@media (max-width: 1440px) {
+  .swiper-slide {
+    //flex-wrap: nowrap;
+    overflow-x: hidden;
+  }
+
+  .slider {
+  }
+}
+
 @media (max-width: 991px) {
   html {
     font-size: 50%;
+  }
+
+  .home {
+    &__slide {
+      padding: 0 10px;
+      &-content {
+        margin: 0 auto;
+      }
+      &-images {
+      }
+    }
   }
 }
 

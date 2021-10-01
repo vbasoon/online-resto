@@ -1,4 +1,12 @@
 .home {
+  &__slide {
+    padding: 0 10px;
+    &-content {
+      margin: 0 auto;
+    }
+    &-images {
+    }
+  }
 }
 
 .dishes {
